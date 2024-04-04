@@ -4,10 +4,10 @@ import React, { useRef, useState } from 'react'
 import { Canvas, useFrame } from '@react-three/fiber'
 import { getProject } from '@theatre/core'
 import studio from '@theatre/studio'
-///import extension from '@theatre/r3f/dist/extension'
+import extension from '@theatre/r3f/dist/extension'
 
 studio.initialize()
-///studio.extend(extension)
+studio.extend(extension)
 
 // our Theatre.js project sheet, we'll use this later
 const demoSheet = getProject('Demo Project').sheet('Demo Sheet')
